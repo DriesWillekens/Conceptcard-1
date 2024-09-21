@@ -18,4 +18,6 @@ try:
         sleep(1)
 
 except KeyboardInterrupt:
+    print("\nProgram stopped by user")
+    sleep(1)
     os.system('clear')
