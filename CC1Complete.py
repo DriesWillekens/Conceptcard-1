@@ -45,7 +45,6 @@ def LM35_read_Temp():
     voltage = LM35.value * 3.3  # Convert value to voltage (assuming 3.3V reference)
     # Convert voltage to temperature in Celsius
     temp = voltage * 100
-    temp -= 2  # Apply offset correction
     return temp
 
 # Function to read temperatures from both sensors and calculate difference
